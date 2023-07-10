@@ -33,7 +33,7 @@ export class Client {
     token!: string;
 
     // [root, admin, client]
-    @Column({ type: "enum", enum: UserRoles, default: UserRoles.CLIENT })
+    @Column({ type: "simple-enum", enum: UserRoles, default: UserRoles.CLIENT })
     role!: UserRoles;
 
     // Relacionamento com a entidade Park
